@@ -1,0 +1,51 @@
+/* Product.css */
+
+.product-container {
+    margin: 20px;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .product-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .product-form {
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  .product-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .product-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .product-form button:hover {
+    background-color: #45a049;
+  }
+  
