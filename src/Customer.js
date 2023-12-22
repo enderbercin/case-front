@@ -22,7 +22,6 @@ const Customer = () => {
 
   const fetchCustomerAndProductList = async () => {
     try {
-      // Fetch customer list
       const customerResponse = await fetch('http://localhost:5058/api/Customer/GetCustomers');
       if (!customerResponse.ok) {
         throw new Error(`HTTP error! Status: ${customerResponse.status}`);
@@ -30,7 +29,6 @@ const Customer = () => {
       const customerData = await customerResponse.json();
       setCustomerList(customerData);
 
-      // Fetch product list
       const productResponse = await fetch('http://localhost:5058/api/CustomerProduct/GetCustomerProducts');
       if (!productResponse.ok) {
         throw new Error(`HTTP error! Status: ${productResponse.status}`);
@@ -65,7 +63,6 @@ const Customer = () => {
   
       fetchCustomerAndProductList();
   
-      // Create işlemi tamamlandıktan sonra input alanları temizle
       setNewCustomer({
         name: '',
         surname: '',
@@ -100,7 +97,6 @@ const Customer = () => {
   
       fetchCustomerAndProductList();
   
-      // Create işlemi tamamlandıktan sonra input alanları temizle
       setNewCustomerProduct({
         customerId: '',
         productId: '',

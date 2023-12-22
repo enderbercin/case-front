@@ -94,10 +94,8 @@ const Report = () => {
   
       console.log('File uploaded successfully!');
   
-      // Verileri sıfırla ve yeniden çek
       setReportData([]);
   
-      // Yeniden veri çek
       fetchData();
     } catch (error) {
       console.error('Error uploading file:', error);

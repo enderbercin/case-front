@@ -1,6 +1,6 @@
 // Product.js
 import React, { useState, useEffect } from 'react';
-import './Product.css'; // CSS dosyanızı ekleyin
+import './Product.css'; 
 
 const Product = () => {
   const [productData, setProductData] = useState([]);
